@@ -16,8 +16,8 @@
   def binarySearch(char_array: list, goal: char):
       start = 0
       end = len - 1
-      mid = (start + end) / 2
       while start < end:
+          mid = (start + end) / 2
           if hash( char_array[mid] ) > hash( goal ):
               mid = end
           elif hash( char_array[mid] ) < hash( goal ):
